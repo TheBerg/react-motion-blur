@@ -2,7 +2,7 @@
 
 > Apply a motion blur visual effect to any element
 
-[![NPM](https://img.shields.io/npm/v/react-motion-blur.svg)](https://www.npmjs.com/package/react-motion-blur) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-motion-blur.svg)](https://www.npmjs.com/package/react-motion-blur)
 
 ## Install
 
@@ -13,17 +13,19 @@ npm install --save react-motion-blur
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
+import {MotionBlur} from "react-motion-blur";
 
-import MyComponent from 'react-motion-blur'
 
-class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+const Example = () => (
+  <MotionBlur intensity={2}>
+    <img src="https://example.com/image.png"/>
+    <div className="whatever-you-want">
+      Any HTML content can go in here!
+    </div>
+    No need for wrappers or anything.
+  </MotionBlur>
+);
 ```
 
 ## License

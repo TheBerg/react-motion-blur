@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e986c699-66a5-4071-89ae-5cfa7f67f2e1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/example/src/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/MouseFollower.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/MouseFollower.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/SideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/SideMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,11 +70,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Carousel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Carousel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/src/Carousel.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
               <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="400">
+                <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -136,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/example/src/SideMenu.js" />
         <option value="$PROJECT_DIR$/example/src/Carousel.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -284,12 +294,12 @@
       <workItem from="1534539096080" duration="6324000" />
       <workItem from="1534555426479" duration="5126000" />
       <workItem from="1534630770010" duration="6936000" />
-      <workItem from="1534722344900" duration="3543000" />
+      <workItem from="1534722344900" duration="3937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28197000" />
+    <option name="totallyTimeSpent" value="28591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1866" y="-175" width="1874" height="1096" extended-state="6" />
@@ -588,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="74" column="66" selection-start-line="74" selection-start-column="66" selection-end-line="74" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/src/SideMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -606,6 +609,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="74" column="66" selection-start-line="74" selection-start-column="66" selection-end-line="74" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="400">
+            <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
