@@ -13,8 +13,19 @@ export interface MotionBlurProps extends HTMLAttributes<HTMLDivElement> {
    * This parameter controls whether to update the effect.
    * when enabled, the component will update its blur
    * every frame using requestAnimationFrame.
+   *
+   * You should strive to deactivate the effect whenever
+   * possible, since many elements using it can have a
+   * significant impact in lower end devices.
    * */
   active: boolean;
+  /**
+   * The blur effect's strength. By default, the blur scales
+   * with the immediate movement speed of the element, but,
+   * if provided, this parameter can scale the blur for a
+   * subtler or more intense effect.
+   * */
+  intensity?: number;
 }
 
 
@@ -55,15 +66,17 @@ export class MotionBlur extends React.Component<MotionBlurProps> {
       this.angle = Math.atan2(dy, dx) * 180 / Math.PI;
       let magnitude = Math.sqrt(dx * dx + dy * dy);
 
-      if (magnitude < 0.1 || !this.props.active) {
+      const {active, intensity = 1} = this.props;
+
+      if (magnitude < 0.1 || !active) {
         magnitude = 0;
       }
 
-      filter.setAttribute("stdDeviation", `${magnitude},0`);
+      filter.setAttribute("stdDeviation", `${magnitude * intensity},0`);
 
       previousX = x - parentX;
       previousY = y - parentY;
-      if (this.props.active) {
+      if (active) {
         requestAnimationFrame(this.loop);
       }
     };

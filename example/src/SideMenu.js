@@ -6,7 +6,7 @@ export function SideMenu() {
   return (
     <div className="SideMenu box">
       <button>the hamburger</button>
-      <MotionBlur className="SideMenu-menu">
+      <MotionBlur className="SideMenu-menu" intensity={3}>
         some<br/>
         really<br/>
         useful<br/>

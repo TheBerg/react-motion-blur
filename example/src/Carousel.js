@@ -6,7 +6,7 @@ import {MotionBlur} from 'react-motion-blur';
 export function Carousel({images}) {
   return (
     <div className="Carousel box">
-      <MotionBlur>
+      <MotionBlur intensity={2}>
         <div className="Carousel-layout">
           {images.map(image => (
             <img
