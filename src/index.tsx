@@ -1,16 +1,27 @@
-/**
- * @class MotionBlur
- */
-
 import * as React from "react";
 import {HTMLAttributes} from "react";
 
 
 export interface MotionBlurProps extends HTMLAttributes<HTMLDivElement> {
+  /**
+   * Elements to be blurred. Since this is a DOM-based
+   * technique, elements within portals to outside this
+   * component will not be affected by the effect.
+   * */
   children: React.ReactChild;
+  /**
+   * This parameter controls whether to update the effect.
+   * when enabled, the component will update its blur
+   * every frame using requestAnimationFrame.
+   * */
   active: boolean;
 }
 
+
+/**
+ * Applies a motion blur effect to the contained components,
+ * based on changes in positioning relative to their offset parents.
+ * */
 export class MotionBlur extends React.Component<MotionBlurProps> {
   private readonly root: React.RefObject<HTMLDivElement>;
   private readonly filter: React.RefObject<SVGFEGaussianBlurElement>;
@@ -44,7 +55,7 @@ export class MotionBlur extends React.Component<MotionBlurProps> {
       this.angle = Math.atan2(dy, dx) * 180 / Math.PI;
       let magnitude = Math.sqrt(dx * dx + dy * dy);
 
-      if (magnitude < 0.1) {
+      if (magnitude < 0.1 || !this.props.active) {
         magnitude = 0;
       }
 
@@ -94,8 +105,9 @@ export class MotionBlur extends React.Component<MotionBlurProps> {
           version="1.1"
           style={{
             position: "fixed",
-            bottom: "100%",
             pointerEvents: "none",
+            width: 0,
+            height: 0,
           }}
         >
           <defs>
