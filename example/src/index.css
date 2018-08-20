@@ -52,6 +52,8 @@ b {
   color: black;
   text-align: left;
   overflow: hidden;
+
+  transform: scale(1);
 }
 
 

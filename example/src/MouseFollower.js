@@ -7,18 +7,15 @@ export class MouseFollower extends Component {
   state = {x: 0, y: 0};
 
   render () {
-    const {convergence = 0} = this.props;
     const {x, y} = this.state;
 
     return (
       <div
         className="MouseFollower box"
         onPointerMove={ev => {
-          const dx = ev.clientX - x;
-          const dy = ev.clientY - y;
           this.setState({
-            x: x + dx * convergence,
-            y: y + dy * convergence,
+            x: ev.nativeEvent.offsetX,
+            y: ev.nativeEvent.offsetY,
           })
         }}
       >

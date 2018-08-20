@@ -18,13 +18,6 @@ export default class App extends Component {
 
         <b>made by <a href="https://kroltan.github.io">kroltan</a></b>
         <b>grab it on <a href="https://github.io/kroltan/react-motion-blur">github</a></b>
-        <b>
-          demo art by <a href="https://twitter.com/The_Moski">
-            moski
-          </a> of <a href="http://whalesandgames.itch.io/">
-            whales and games
-          </a>
-        </b>
 
         <div className="demos-wrapper">
           <Demo
@@ -33,7 +26,7 @@ export default class App extends Component {
               move your pointer within the white area and watch <abbr title="the dragon orb">dragorb</abbr> roll
             </Fragment>}
           >
-            <MouseFollower convergence={0.25}/>
+            <MouseFollower/>
           </Demo>
 
           <Demo
@@ -55,6 +48,14 @@ export default class App extends Component {
             <SideMenu/>
           </Demo>
         </div>
+
+        <b>
+          demo art by <a href="https://twitter.com/The_Moski">
+          moski
+        </a> taken from <a href="http://whalesandgames.itch.io/">
+          whales and games
+        </a> games
+        </b>
       </Fragment>
     )
   }
